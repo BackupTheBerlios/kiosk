@@ -7,3 +7,7 @@ hwsetup
 icewm
 perl
 mozilla-firebird-bin
+syslinux
+
+# auf dem System, auf welchem die Livecd erzeugt wird:
+zisofs-tools (mkzftree)

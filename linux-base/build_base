@@ -1,9 +1,13 @@
 # hier wird beschrieben wie die live-cd basierend auf gentoo linux erzeugt wird
 
+# wenn alles auf eine eigene partition soll, folgende schritte ausführen
 - fdisk um partition anzulegen (z.b. /dev/hda3)
 - mke2fs /dev/hda3
 - tune2fs -i 0 -c 0 /dev/hda3
 - mount /dev/hda3 /mnt/gentoo
+
+# danach wird es ein skript geben, daß nimmt als verzeichnis /mnt/gentoo - egal ob das auf einer extra partition ist oder nicht,
+# das hat auf die Erstellung der CD keinen Einfluss - es kann nur nicht zum test con HDD gebootet werden!
 - lynx http://www.gentoo.org/main/en/mirrors.xml -> mirror aussuchen -> releases -> x86 -> 1.4 (oder neuer) -> stages -> stage3XXX downloaden nach /mnt/gentoo
 - tar -xvjpf stage?-*.tar.bz2
 - vi /mnt/gentoo/etc/make.conf (use-flags setzen)
