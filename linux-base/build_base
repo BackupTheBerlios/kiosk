@@ -12,3 +12,7 @@
 - env-update
 - source /etc/profile
 - emerge sync
+- vi /etc/make.conf (USE-flags)
+- emerge -vp world
+- vi /etc/rc.conf (tastaturlayout)
+- emerge XXX (alle pakete aus packages)
