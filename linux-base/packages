@@ -1,3 +1,9 @@
 # Hier werden alle Pakete aufgelistet, die im Linux-Paket enthalten sind, dies sollte moeglichst eine minimal-Auswahl sein!
+# (das soll eine komplette Liste der Programme werden, die wirklich gebraucht werden - Anhängigkeiten werden automatisch aufgelöst)
 
-
+apache
+livecd-tools
+hwsetup
+metacity
+perl
+mozilla-firebird-bin
